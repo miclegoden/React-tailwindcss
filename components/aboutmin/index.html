@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ COMPONENT NAME }}" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="../../dist/mix-manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>{{ COMPONENT NAME }}</title>
+  <link rel="stylesheet" href="../../dist/css/app.css" />
+  
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div>
+         <div class="w-full relative sm:flex">
+          <div class="w-full sm:w-1/6 sm:rounded-xl ">
+            <img class="sm:w-full w-full h-full object-cover sm:rounded-xl sm:h-36" src='../../dist/img/about/Image.png'/>
+          </div>
+           <div class="px-4 py-4 sm:py-0 w-full sm:w-5/6 bg-white absolute sm:relative -mt-10  sm:mt-0 flex-col  rounded-xl sm:rounded-none sm:text-left text-center z-50">
+            <h1 class="font-semibold text-3xl tracking-tight not-italic pb-3 font-albertSans-medium text-[#14154E]">About us</h1>
+            <h1 class="sm:font-medium text-base tracking-tight not-italic  pb-3 sm:text-left font-semibold text-center font-albertSans-medium text-[#14154E]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis elit in tincidunt morbi tristique amet placerat. Nullam dignissim dolor, donec massa porta tincidunt nunc. </h1>
+            <button class="rounded-xl  text-white font-medium text-base px-2.5 py-2.5 font-albertSans-medium hover:bg-[#6667AB] bg-[#40417B]">Explore rent to buy</button>
+          </div>
+         </div>
+         
+        <div class="w-full gap-7 relative sm:flex mt-64 sm:mt-0  mb-32 ">
+           <div class="px-4 py-4 sm:py-0 sm:px-0 sm:pr-2 w-full sm:w-5/6 bg-white absolute sm:relative mt-64 sm:mt-0 flex-col-reverse  rounded-xl sm:rounded-none sm:text-left text-center z-50">
+            <h1 class="font-semibold text-3xl tracking-tight not-italic pb-3 font-albertSans-medium text-[#14154E]">About us</h1>
+            <h1 class="sm:font-medium text-base tracking-tight not-italic  pb-3 sm:text-left font-semibold text-center font-albertSans-medium text-[#14154E]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis elit in tincidunt morbi tristique amet placerat. Nullam dignissim dolor, donec massa porta tincidunt nunc. </h1>
+            <button class="rounded-xl  text-white font-medium text-base px-2.5 py-2.5 font-albertSans-medium hover:bg-[#6667AB] bg-[#40417B] mb-32 sm:mb-0">Explore rent to buy</button>
+          </div>
+
+           <div class="w-full sm:w-1/6 sm:rounded-xl">
+            <img class="sm:w-full w-full object-cover sm:rounded-xl sm:h-36" src='../../dist/img/about/Image.png'/>
+          </div>
+        </div>
+  </div>
+  <script src="//code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <!--<script src="js/Index.js"></script>-->
+  <script src="../../dist/js/app.js" /></script>
+</body>
+
+</html>

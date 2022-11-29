@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ COMPONENT NAME }}" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="../../dist/mix-manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>{{ COMPONENT NAME }}</title>
+  <link rel="stylesheet" href="../../dist/css/app.css" />
+  
+</head>
+
+<body style="opacity: 1;">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div class="grid grid-cols-4 grid-flow-row max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
+    <div class="card-type-1 grid-card-item">
+      <a class="card blog-card inline-block font-albertSans-medium rounded-xl border-card overflow-hidden">
+        <div class="blog-card-image relative">
+          <img src="../../src/img/card_placeholder.png" class="object-cover w-full h-full">
+        </div>
+        <div class="p-6 blog-card-content">
+          <span class="bk-base-turquoise-100 base-purple-700 text-xs font-semibold mr-2 px-3 py-1.5 rounded-lg dark:bg-blue-200 dark:text-blue-800 tracking-wider">CHIP</span>
+          <div class="">
+            <h5 class="my-4 text-2xl font-bold tracking-tight base-purple-700 dark:text-white tracking-wider blog-card-title">Card title1</h5>
+            <p class="font-normal base-purple-700 tracking-tight dark:text-gray-400 mb-4 blog-card-text tracking-[-.2px] min-h-[48px]">Short, supporting body copy.<br>Three lines maximum</p>
+            <span class="base-purple-500 text-xs font-extrabold mr-2 py-1.5 rounded  dark:text-blue-800 tracking-widest blog-card-status uppercase">Posted</span>
+            <span class="bk-base-turquoise-100 base-purple-700 text-xs mr-2 px-3 py-1.5 rounded-lg dark:bg-blue-200 dark:text-blue-800 tracking-wider font-extrabold">01 JAN 2022</span>
+          </div>
+          <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base pt-4 text-center inline-flex items-center underline underline-offset-8 blog-card-btn items-center font-medium text-[#14154E]">
+              Text CTA
+              <svg class="ml-2" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4767 5.66667L6.00671 1.19667L7.18504 0.0183334L13.6667 6.5L7.18504 12.9817L6.00671 11.8033L10.4767 7.33333H0.333374V5.66667H10.4767Z" fill="#14154E"/>
+              </svg>
+
+          </button>
+        </div>
+      </a>
+    </div>
+    <div class="card-type-2 grid-card-item">
+      <a class="card-st blog-card inline-block font-albertSans-medium rounded-xl overflow-hidden relative">
+        <div class="h-full absolute">
+          <img src="../../src/img/card/card1.jpg" class="object-cover w-full h-full">
+        </div>
+        <div class="bk-base-purple-700 absolute w-full h-full opacity-40"></div>
+
+        <div class="p-6 blog-image-card-content absolute">
+          <span class="bk-base-turquoise-100 base-purple-700 text-xs font-semibold mr-2 px-3 py-1.5 rounded-lg dark:bg-blue-200 dark:text-blue-800 tracking-wider">CHIP</span>
+          <div class="">
+            <h5 class="my-4 text-2xl font-bold tracking-tight base-purple-100 dark:text-white tracking-wider blog-card-title">Card title1</h5>
+            <p class="font-normal base-purple-100 tracking-tight dark:text-gray-400 mb-4 blog-card-text tracking-[-.2px] min-h-[48px]">Short, supporting body copy.<br>Three lines maximum</p>
+
+            <span class="text-white	text-xs font-extrabold mr-2 py-1.5 rounded  dark:text-blue-800 tracking-widest blog-card-status uppercase">Posted</span>
+            <span class="bk-base-turquoise-100 base-purple-700 text-xs mr-2 px-3 py-1.5 rounded-lg dark:bg-blue-200 dark:text-blue-800 tracking-wider font-extrabold">01 JAN 2022</span>
+          </div>
+          <button type="button" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base pt-4 text-center inline-flex items-center underline underline-offset-8 blog-card-btn items-center font-medium text-white">
+              Text CTA
+              <svg class="ml-2" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4767 5.66667L6.00671 1.19667L7.18504 0.0183334L13.6667 6.5L7.18504 12.9817L6.00671 11.8033L10.4767 7.33333H0.333374V5.66667H10.4767Z" fill="#FFFFFF"/>
+              </svg>
+
+          </button>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <script src="//code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <!--<script src="js/Index.js"></script>-->
+  <script src="../../dist/js/app.js" /></script>
+</body>
+
+</html>

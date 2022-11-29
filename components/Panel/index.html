@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ COMPONENT NAME }}" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="../../dist/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>{{ COMPONENT NAME }}</title>
+    <link rel="stylesheet" href="../../dist/css/app.css" />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div>
+      <!-- <div class="panel">
+        <div class="image rounded-lg">
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper-img"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about align-middle">
+            <div class="place-items-center content z-10 rounded-xl bg-white">
+              <p class="text-center content-header-font">
+                About us
+              </p>
+              <div class="content-slide">
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="swiper mySwiper"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center mt-6 w-full">
+                <div
+                  class="swiper-button-prev relative border-2 border-my-base-purple-500 rounded-lg px-5"
+                >
+                  <div>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02331 6.16667H14.1666V7.83334H4.02331L8.49331 12.3033L7.31498 13.4817L0.833313 7.00001L7.31498 0.518341L8.49331 1.69667L4.02331 6.16667Z"
+                        fill="#14154E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h1 class="px-7 -mt-3">
+                  <p id="page-count" name="page-count">1/4</p>
+                </h1>
+                <div
+                  class="swiper-button-next relative border-2 border-my-base-purple-500 rounded-lg px-5"
+                >
+                  <div>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4767 6.16667L6.00668 1.69667L7.18501 0.518333L13.6667 7L7.18501 13.4817L6.00668 12.3033L10.4767 7.83333H0.333344V6.16667H10.4767Z"
+                        fill="#14154E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Second component -->
+
+      <!-- <div class="panel">
+        <div class="image-sec rounded-lg">
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper-img"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image2.jpg"
+                  alt="panel-img-sec"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image2.jpg"
+                  alt="panel-img-sec"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image2.jpg"
+                  alt="panel-img-sec"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image2.jpg"
+                  alt="panel-img-sec"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about-sec align-middle">
+            <div
+              class="place-items-center content-sec z-10 rounded-xl bg-white"
+            >
+              <p class="text-center content-header-font">
+                About us
+              </p>
+              <div class="content-slide-sec">
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="swiper mySwiper"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                    <div class="swiper-slide">
+                      <p class="text-center content-font">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Turpis elit in tincidunt morbi tristique amet placerat.
+                        Nullam dignissim dolor, donec massa porta tincidunt
+                        nunc.
+                      </p>
+                      <button
+                        class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                      >
+                        Explore rent to buy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center mt-6 w-full">
+                <div
+                  class="swiper-button-prev relative border-2 border-my-base-purple-500 rounded-lg px-5"
+                >
+                  <div>
+                    <svg
+                      width="15"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.02331 6.16667H14.1666V7.83334H4.02331L8.49331 12.3033L7.31498 13.4817L0.833313 7.00001L7.31498 0.518341L8.49331 1.69667L4.02331 6.16667Z"
+                        fill="#14154E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h1 class="px-7 -mt-3">
+                  <p id="page-count" name="page-count">1/4</p>
+                </h1>
+                <div
+                  class="swiper-button-next relative border-2 border-my-base-purple-500 rounded-lg px-5"
+                >
+                  <div>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.4767 6.16667L6.00668 1.69667L7.18501 0.518333L13.6667 7L7.18501 13.4817L6.00668 12.3033L10.4767 7.83333H0.333344V6.16667H10.4767Z"
+                        fill="#14154E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Third component -->
+
+      <div class="panel">
+        <div class="about align-middle">
+          <div class="place-items-center content z-10 rounded-xl bg-white">
+            <p class="text-center content-header-font">
+              About us
+            </p>
+            <div class="content-slide">
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="text-center content-font">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Turpis elit in tincidunt morbi tristique amet placerat.
+                      Nullam dignissim dolor, donec massa porta tincidunt nunc.
+                    </p>
+                    <button
+                      class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                    >
+                      Explore rent to buy
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="text-center content-font">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Turpis elit in tincidunt morbi tristique amet placerat.
+                      Nullam dignissim dolor, donec massa porta tincidunt nunc.
+                    </p>
+                    <button
+                      class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                    >
+                      Explore rent to buy
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="text-center content-font">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Turpis elit in tincidunt morbi tristique amet placerat.
+                      Nullam dignissim dolor, donec massa porta tincidunt nunc.
+                    </p>
+                    <button
+                      class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                    >
+                      Explore rent to buy
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="text-center content-font">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Turpis elit in tincidunt morbi tristique amet placerat.
+                      Nullam dignissim dolor, donec massa porta tincidunt nunc.
+                    </p>
+                    <button
+                      class="mx-auto text-white btn-buy place-items-center bg-[#6667AB]"
+                    >
+                      Explore rent to buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center mt-6 w-full">
+              <div
+                class="swiper-button-prev relative border-2 border-my-base-purple-500 rounded-lg px-5"
+              >
+                <div>
+                  <svg
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.02331 6.16667H14.1666V7.83334H4.02331L8.49331 12.3033L7.31498 13.4817L0.833313 7.00001L7.31498 0.518341L8.49331 1.69667L4.02331 6.16667Z"
+                      fill="#14154E"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h1 class="px-7 -mt-3">
+                <p id="page-count" name="page-count">1/4</p>
+              </h1>
+              <div
+                class="swiper-button-next relative border-2 border-my-base-purple-500 rounded-lg px-5"
+              >
+                <div>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4767 6.16667L6.00668 1.69667L7.18501 0.518333L13.6667 7L7.18501 13.4817L6.00668 12.3033L10.4767 7.83333H0.333344V6.16667H10.4767Z"
+                      fill="#14154E"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image rounded-lg">
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper-img"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-lg slide-img"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+              <div class="swiper-slide slide-img">
+                <img
+                  class="rounded-lg"
+                  src="../../dist/img/panel/Image.jpg"
+                  alt="panel-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="//code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../../dist/js/app.js"></script>
+  </body>
+</html>

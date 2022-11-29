@@ -1,0 +1,273 @@
+.panel {
+  width: 100%;
+}
+
+.image {
+  width: 80%;
+  height: 505px;
+  float: right;
+}
+
+.slide-img {
+  height: 505px;
+  right: 0px;
+}
+
+.about {
+  height: 505px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.content {
+  //   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 24px;
+  position: absolute;
+  width: 442px;
+  height: 384px;
+  left: 0px;
+  //   top: calc(50% - 384px / 2 - 0.5px);
+
+  /* Base/White/500 */
+}
+
+.content-header-font {
+  font-size: 40px;
+}
+
+.btn-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 6px;
+  margin-top: 5%;
+
+  margin-bottom: 5%;
+  width: 165px;
+  height: 52px;
+
+  /* Base/Purple/500 */
+
+  //   background: #6667ab;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.swiper-button-next:after {
+  display: none !important;
+}
+.swiper-button-prev:after {
+  display: none !important;
+}
+
+.btn-showslide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.move {
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 1440px) {
+  //   .image {
+  //     height: 400px !important;
+  //   }
+  //   .slide-img {
+  //     height: 400px !important;
+  //   }
+  .content {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image {
+    height: 400px !important;
+  }
+  .slide-img {
+    height: 400px !important;
+  }
+  .about {
+    height: 400px !important;
+  }
+  .content {
+    width: 350px;
+    height: 300;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .slide-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .about {
+    width: 100% !important;
+    height: 505px !important;
+    margin-top: 300px;
+  }
+  .content {
+    width: 100%;
+    height: 600px;
+    padding: 30px;
+  }
+}
+
+// Second
+
+.image-sec {
+  width: 70%;
+  height: 505px;
+}
+
+.slide-img-sec {
+  height: 505px;
+}
+
+.about-sec {
+  height: 505px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.content-sec {
+  //   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 24px;
+  position: absolute;
+  width: 689px;
+  height: 336px;
+  right: 0px;
+  //   top: calc(50% - 384px / 2 - 0.5px);
+
+  /* Base/White/500 */
+}
+
+.content-header-font {
+  font-size: 40px;
+}
+
+.btn-buy-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 6px;
+  margin-top: 5%;
+
+  margin-bottom: 5%;
+  width: 165px;
+  height: 52px;
+
+  /* Base/Purple/500 */
+
+  //   background: #6667ab;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.swiper-button-next:after {
+  display: none !important;
+}
+.swiper-button-prev:after {
+  display: none !important;
+}
+
+.btn-showslide-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.move-sec {
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 1440px) {
+  //   .image {
+  //     height: 400px !important;
+  //   }
+  //   .slide-img {
+  //     height: 400px !important;
+  //   }
+  .content-sec {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .image-sec {
+    height: 400px !important;
+  }
+  .slide-img-sec {
+    height: 400px !important;
+  }
+  .about-sec {
+    height: 400px !important;
+  }
+  .content-sec {
+    width: 450px;
+    height: 270;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-sec {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .slide-img-sec {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .about-sec {
+    width: 100% !important;
+    height: 505px !important;
+    margin-top: 300px;
+  }
+  .content-sec {
+    width: 100%;
+    height: 600px;
+    padding: 30px;
+  }
+}
